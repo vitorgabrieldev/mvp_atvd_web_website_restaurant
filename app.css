@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.firstPage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.layoutBtns {
+    position: absolute;
+    z-index: 99;
+    width: 50%;
+    height: 75%;
+    margin-left: 50%;
+    display: grid;
+
+}
+.gridContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.button_img > img {
+    width: 12rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .33s;
+    border: 5px solid transparent;
+}
+.button_img > img:hover {
+    transform: scale(1.1);
+    border: 5px solid #f39394;
+}
+.button_img {
+    border: none;
+    background: transparent;
+}
+.buttonAllCardapio {
+    position: absolute;
+    width: 100%;
+    bottom: -9rem;
+    text-align: center;
+}
+.buttonAllCardapio > img {
+    width: 80%;
+    border-radius: 12px;
+    cursor: pointer;    
+    border: 10px solid transparent;
+}
+.buttonAllCardapio > img:hover {
+    border: 10px solid #eb7476;
+}
